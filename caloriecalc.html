@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Calorie Calculator</title>
+</head>
+
+<body>
+    <div id="background-image">
+        <div id="wrapper">
+            <nav id="nav-container">
+                <div id="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </div>
+            </nav>
+            <div id="intro-header-text">
+                <h1>Calorie Calculator</h1>
+                <p>Find out how many calories per day to maintain your weight and what adjustments you can make to lose
+                    or
+                    gain weight!</p>
+            </div>
+            <main>
+                <div id="form-container">
+                    <h2>Please enter your info</h2>
+                    <div id="form-wrapper">
+                        <input id="age-input" type="number" placeholder="Age (18 to 80)" min="18" max="80">
+                        <select name="gender" id="gender-selection">
+                            <option value="">Gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                        <input id="height-input" type="number" placeholder="Height (cm)" min="145" max="205">
+                        <input id="weight-input" type="number" placeholder="Weight (kg)" min="40" max="130">
+                        <select name="ActivityLevel" id="activity-level">
+                            <option value="">Activity Level</option>
+                            <option id="activity-level-0" value="sedentary">Sedentary (Limited exercise)</option>
+                            <option id="activity-level-1" value="lightlyActive">Lightly active (Exercise less than 3
+                                days
+                                per
+                                week)
+                            </option>
+                            <option id="activity-level-2" value="moderatelyActive">Moderately active (Moderate exercise
+                                most
+                                days of
+                                the
+                                week)</option>
+                            <option id="activity-level-3" value="veryActive">Very active (Hard exercise every day)
+                            </option>
+                            <option id="activity-level-4" value="extraActive">Extra active (Strenuous exercise two or
+                                more
+                                times
+                                per
+                                day)</option>
+                        </select>
+                        <button id="enter-info-btn">Enter</button>
+                    </div>
+                    <p>This calculator is for informational purposes only, you should consult a healthcare provider
+                        before making any health decisions. The calculator is based on the Mifflin-St. Jeor equation, a
+                        formula that has been shown to be an accurate way of estimating calorie needs in numerous
+                        studies.</p>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    <div id="result-container">
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
