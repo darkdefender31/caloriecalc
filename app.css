@@ -14,7 +14,7 @@ html{
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("main/caloriecalc/Frame.jpg");
+    background-image: url("/Frame.jpg");
 }
 
 #wrapper{
